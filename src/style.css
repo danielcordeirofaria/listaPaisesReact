@@ -13,26 +13,37 @@ body{
     align-items: center;
 }
 
-header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 35px;
-    height: 60px;
-    width: 100%;
-    background-color: #4c89e3;
-    color: #fff;
-}
-
 th, td{
     border: solid 1px;
+}
+
+th{
+    border-color: black;
+    color: #808080;
+    font-size: 12px;
+}
+
+td{
+    font-size: 12px;
+
+}
+
+.tableTitle{
+    text-align: center;
+    color: #4F4F4F;
+    border-color: black;
+    font-weight: bold;
+    font-size: 16px;
+
 }
 
 table{
     text-align: center;
     table-layout: fixed;
-    width: 80%;
+    width: 60%;
+    margin-top: 4rem;
 }
+
 
 .footer{
     text-align: center;
@@ -40,7 +51,7 @@ table{
     align-items: center;
 }
 
-.ano{
+.year{
     margin-top: 0;
     margin-bottom: 0.5rem;
 }

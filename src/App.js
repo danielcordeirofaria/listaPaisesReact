@@ -24,13 +24,11 @@ function App() {
 
   return (
     <div className="container">
-      <header>
-        <strong>Lista de Países</strong>
-      </header>
-      <table cellspacing="0">
+      
+      <table cellspacing="0" className="table">
         <thead>
           <tr>
-            <th colspan="4">Countries List</th>
+            <th colspan="4" className="tableTitle">Countries List</th>
           </tr>
           <tr>
             <th>Name</th>
@@ -49,17 +47,17 @@ function App() {
               {item?.capital || "-"}
             </td>
             <td>
-              {item?.area || "-"}
+              {item?.area.toFixed(2) || "-"}
             </td>
             <td>
-            {item.currencies && Object.keys(item?.currencies).map(sub => <p>{sub}</p>)}            </td>
+            {item.currencies && Object.keys(item?.currencies).map(sub => <p>{sub}</p>)|| "-"}            </td>
           </tr>
         )
       })}
       </table>
       <div className="footer">
         <p>Desenvolvido por Daniel Faria</p>
-        <p className="ano">2022</p>
+        <p className="year">2022</p>
       </div>
     </div>
 
