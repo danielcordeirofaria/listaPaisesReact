@@ -51,7 +51,8 @@ function App() {
             <td>
               {item?.area || "-"}
             </td>
-              {<td> - </td>}
+            <td>
+            {item.currencies && Object.keys(item?.currencies).map(sub => <p>{sub}</p>)}            </td>
           </tr>
         )
       })}
