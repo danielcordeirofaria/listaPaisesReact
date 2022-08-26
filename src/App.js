@@ -30,7 +30,7 @@ function App() {
       <table cellspacing="0">
         <thead>
           <tr>
-            <th>Countries List</th>
+            <th colspan="4">Countries List</th>
           </tr>
           <tr>
             <th>Name</th>
@@ -43,7 +43,7 @@ function App() {
         return(
           <tr>   
             <td>
-              {item?.name?.official || "-"}
+              {item?.name?.common || "-"}
             </td>
             <td>
               {item?.capital || "-"}
@@ -51,11 +51,15 @@ function App() {
             <td>
               {item?.area || "-"}
             </td>
-              {Object.keys(item.currencies).map(subitem => <td> {subitem} </td>)}
+              {<td> - </td>}
           </tr>
         )
       })}
       </table>
+      <div className="footer">
+        <p>Desenvolvido por Daniel Faria</p>
+        <p className="ano">2022</p>
+      </div>
     </div>
 
   );
